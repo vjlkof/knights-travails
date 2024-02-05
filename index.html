@@ -5,10 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B-tree</title>
     <script type="module" src="index.js"></script>
-    <script type="module" src="Vertex.js"></script>
     <script type="module" src="AdyacentMatrixChessList.js"></script>
   </head>
   <body>
     <h1>Knight travails</h1>
+    <form>
+      <h3>Start point</h3>
+      <label for="start-point-1">
+        Introduce first coordinate
+        <input
+          id="start-point-1"
+          type="number"
+          name="start-point-1"
+          value="3"
+          min="0"
+          max="7"
+          required
+        />
+      </label>
+      <label for="start-point-2">
+        Introduce second coordinate
+        <input
+          id="start-point-2"
+          type="number"
+          name="start-point-2"
+          value="3"
+          min="0"
+          max="7"
+          required
+        />
+      </label>
+      <hr />
+      <h3>End point</h3>
+      <label for="end-point-1">
+        Introduce first coordinate
+        <input
+          id="end-point-1"
+          type="number"
+          name="end-point-1"
+          value="7"
+          min="0"
+          max="7"
+          required
+        />
+      </label>
+      <label for="end-point-2">
+        Introduce second coordinate
+        <input
+          id="end-point-2"
+          type="number"
+          name="end-point-2"
+          value="7"
+          min="0"
+          max="7"
+          required
+        />
+      </label>
+      <hr />
+      <hr />
+      <button id="button-submit" type="submit">Calculate movements</button>
+    </form>
+    <hr />
+    <hr />
+    <h3>Result</h3>
+    <h2 id="result"></h2>
   </body>
 </html>
